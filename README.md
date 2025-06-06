@@ -23,18 +23,19 @@ sudo dkms add .
 sudo dkms install tenstorrent/2.0.0
 sudo modprobe tenstorrent
 ```
-(or reboot, driver will auto-load next boot)
-
+* For Alpine linux
 ```
 doas akms install .
 doas modeprobe tenstorrent
 ```
+(or reboot, driver will auto-load next boot)
 
 ### To uninstall:
 ```
 sudo modprobe -r tenstorrent
 sudo dkms remove tenstorrent/2.0.0 --all
 ```
+* For Alpine linux
 ```
 doas modeprobe -r tenstorrent
 doas akms remove . (in tt-kmd directory)

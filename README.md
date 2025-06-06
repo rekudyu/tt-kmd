@@ -38,5 +38,5 @@ sudo dkms remove tenstorrent/2.0.0 --all
 * For Alpine linux
 ```
 doas modeprobe -r tenstorrent
-doas akms remove . (in tt-kmd directory)
+doas akms remove tenstorrent
 ```

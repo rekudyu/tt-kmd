@@ -14,10 +14,10 @@ options="!check"
 
 package() {
 	mkdir -p $pkgdir
-	cd "$srcdir"/tt-kmd-tt-kmd-"$pkgver"
-	install -Dm755 "alpine/$pkgname.post-install"  "$pkgdir/.post-install"
-	install -Dm755 "alpine/$pkgname.post-install"  "$pkgdir/.post-deinstall"
-	install -Dm755 "alpine/$pkgname.post-install"  "$pkgdir/.pre-deinstall"
+	cd ""$srcdir"/tt-kmd-tt-kmd-"$pkgver""
+	install -Dm755 ""$srcdir"/tt-kmd-tt-kmd-"$pkgver"/alpine/$pkgname.post-install"  "$pkgdir/.post-install"
+	install -Dm755 ""$srcdir"/tt-kmd-tt-kmd-"$pkgver"/alpine/$pkgname.pre-deinstall"  "$pkgdir/.pre-deinstall"
+	install -Dm755 ""$srcdir"/tt-kmd-tt-kmd-"$pkgver"/alpine/$pkgname.post-deinstall"  "$pkgdir/.post-deinstall"
 	make akms 
 }
 

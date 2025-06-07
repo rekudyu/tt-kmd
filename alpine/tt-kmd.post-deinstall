@@ -1,0 +1,3 @@
+#!/bin/sh
+rm /etc/udev/rules.d/50-tenstorrent.rules
+udevadm control -R
